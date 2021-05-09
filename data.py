@@ -1,3 +1,4 @@
+prefix = "$"
 routines = {
     'monday': {
         'DBMS': '  8:00 to 9:30',
@@ -38,3 +39,27 @@ days = ['monday', 'tuesday',
 
 roughWords = ['lado', 'muji', 'muzi', 'puti', 'bhalu',
               'randi', 'randikochoro', 'rand', 'gukha', 'gu', 'chakka','rajan','kando','radi','chikney','chikni']
+            
+help_str = {
+  'help':{
+    'title':'Help',
+    'desc':'Displays this help dialog box',
+    'example':f'{prefix}help'
+  },
+  'DayOfWeek':{
+    'title':'<day_of_week>',
+    'desc':'Displays the routine for the entire day',
+    'example':f'''{prefix}sunday '''
+  },
+  'AbsDays':{
+    'title':'Abstract Days',
+    'desc':f'Displays the routine for that corresponding day\n Supported days are {str(abs_days.keys())[11:-2]}',
+    'example':f'''{prefix}bholi
+{prefix}parsi'''
+  },
+  'notice':{
+    'title':'Kec Website Notice',
+    'desc':'Displays the current notices from kecktm.edu.np',
+    'example':f'{prefix}notice'
+  }
+}
