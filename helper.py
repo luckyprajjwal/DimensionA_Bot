@@ -42,30 +42,9 @@ async def display_routines(chan, day):
   rout_classes = data.routines[day]
   for clas in rout_classes:
       emb.add_field(name=rout_classes[clas], value=clas, inline=False)
-  emb.set_footer(text=f"\nMade by lambe")
+  emb.set_footer(text=f"\nMade by lambe\nhttps://dimensionabot.dimensionalblad.repl.co/")
   await chan.send(embed=emb)
 
-async def display_routines(day):
-  # display_routines ( channel , day_of_week)
-  # channel is the channel to send the data to obtained from a message as message.channel
-  global client
-  chan=client.get_channel(838611757857374228)
-  if day == 'saturday':
-      await chan.send(file=discord.File('media/sanibar.jpg'))
-      return
-  if day == 'sunday':
-      await chan.send(file=discord.File('media/sun.jpg'))
-      return
-
-  # Actual routine embed start here
-  emb = discord.Embed(
-      title=day.title(), description='', color=discord.Color.blurple())
-
-  rout_classes = data.routines[day]
-  for clas in rout_classes:
-      emb.add_field(name=rout_classes[clas], value=clas, inline=False)
-  emb.set_footer(text=f"\nMade by lambe")
-  await chan.send(embed=emb)
 
 async def parseRoughWords(msg):
   phrase = msg.content.lower().replace(" ", '')
@@ -90,6 +69,8 @@ async def displayKecNotice(mess):
   for i in x:
     await mess.channel.send(embed=discord.Embed().set_image(url=i))
   
+
+
 
 #2048 game implementation starts here
 

@@ -1,11 +1,14 @@
-from flask import Flask
+from flask import Flask , render_template
 from threading import Thread
 
 app = Flask('')
 
 @app.route('/')
 def home():
-    return "Hello. I am alive!"
+    return render_template('index.html')
+@app.route('/soundboard')
+def soundboard():
+    return render_template('soundboard.html')
 
 def run():
   app.run(host='0.0.0.0',port=8080)
