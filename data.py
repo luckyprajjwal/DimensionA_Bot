@@ -13,7 +13,6 @@ routines = {
         'OS ': '  12:30 to 2:00',
     },
     'wednesday': {
-        'Break ': ' 8:00 to 10:15',
         'Computer Network': '  10:15 to 11:45',
         'Break ': ' 11:45 to 12:30',
         'OS ': ' 12:30 to 2:00'
@@ -32,13 +31,13 @@ routines = {
 }
 
 abs_days = {'today': 0, 'hijo': -1, 'bholi': 1,
-            'parsi': 2, 'nikoparsi': 3, 'asti': -2}
+            'parsi': 2, 'nikoparsi': 3, 'asti': -2,'aaja':0}
 
 days = ['monday', 'tuesday',
         'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
 
 roughWords = ['lado', 'muji', 'muzi', 'puti', 'bhalu',
-              'randi', 'randikochoro', 'rand', 'gukha', 'gu', 'chakka','rajan','kando','radi','chikney','chikni']
+              'rand', 'gukha', 'gu', 'chakka','rajan','kando','radi','chikney','chikni']
             
 help_str = {
   'help':{
@@ -55,11 +54,19 @@ help_str = {
     'title':'Abstract Days',
     'desc':f'Displays the routine for that corresponding day\n Supported days are {str(abs_days.keys())[11:-2]}',
     'example':f'''{prefix}bholi
-{prefix}parsi'''
+{prefix}parsi
+{prefix}aaja'''
   },
   'notice':{
     'title':'Kec Website Notice',
     'desc':'Displays the current notices from kecktm.edu.np',
     'example':f'{prefix}notice'
+  },
+  'sqlquery':{
+    'title':'MySQL',
+    'desc':'Displays the result of sql query',
+    'example':'''
+create table table_name;
+    '''
   }
 }

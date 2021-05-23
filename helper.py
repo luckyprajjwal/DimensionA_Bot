@@ -42,15 +42,16 @@ async def display_routines(chan, day):
   rout_classes = data.routines[day]
   for clas in rout_classes:
       emb.add_field(name=rout_classes[clas], value=clas, inline=False)
-  emb.set_footer(text=f"\nMade by lambe\nhttps://dimensionabot.dimensionalblad.repl.co/")
+  emb.set_footer(text=f"\nhttps://dimensionabot.dimensionalblad.repl.co/")
   await chan.send(embed=emb)
 
 
 async def parseRoughWords(msg):
   phrase = msg.content.lower().replace(" ", '')
   for i in data.roughWords:
-      if i in phrase:
-          await msg.channel.send('> Oe Mukh Nachad, terai ghar aayera thokdieula ni pheri')
+    if i in phrase:
+      await msg.channel.send('> Oe Mukh Nachad, terai ghar aayera thokdieula ni pheri')
+      return
 
 async def display_help(messag):
   hstr = data.help_str

@@ -3,25 +3,14 @@ from threading import Thread
 
 app = Flask('')
 
-@app.route('/templates/test.js')
-def test():
-  return render_template('test.js')
-
-@app.route('/templates/bootstrap.css')
-def bootstrap():
-  return render_template('bootstrap.css')
-
-@app.route('/templates/mobile.css')
-def mobile():
-  return render_template('mobile.css')
 
 @app.route('/')
 def home():
     return render_template('index.html')
 
-@app.route('/lucky')
-def lucky():
-    return render_template('lucky.html')
+# @app.route('/lucky')
+# def lucky():
+#     return render_template('lucky.html')
 
 def run():
   app.run(host='0.0.0.0',port=8080)
