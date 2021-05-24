@@ -79,7 +79,7 @@ async def displayKecNotice(mess):
 
 async def next_class(messa):
 	m= messa.content.split()[1].lower()
-	if m=='co&a'or m=='fd'or m=='ee'or m=='d'or m=='o'or m=='cn':
+	if m=='co&a'or m=='fd'or m=='ee'or m=='dbms'or m=='os'or m=='cn':
 		await dis_next(messa.channel,m)
 
 

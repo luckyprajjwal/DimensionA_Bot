@@ -15,7 +15,7 @@ routines = {
   '''
 
     'monday': {
-        'DBMS': '  8:00 to 9:30',
+        'Data Base Management System': '  8:00 to 9:30',
         'Break': '  9:30 to 10:15',
         'Engineering Economics ': '  10:15 to 11:45',
         'Computer Network ': '  11:45 to 1:15',
@@ -24,12 +24,12 @@ routines = {
         'C. Organi & Architecture ': '  8:00 to 9:30',
         'Minor Project ': '  9:30 to 11:00',
         'Break ': '  11:00 to 12:30',
-        'OS ': '  12:30 to 2:00',
+        'Operating System ': '  12:30 to 2:00',
     },
     'wednesday': {
         'Computer Network ': '  10:15 to 11:45',
         'Break ': ' 11:45 to 12:30',
-        'OS ': ' 12:30 to 2:00'
+        'Operating System ': ' 12:30 to 2:00'
     },
     'thursday': {
         ' Engineering Economics ': '  8:00 to 9:30',
@@ -38,7 +38,7 @@ routines = {
         'Filter Design ': ' 11:45 to 1:15'
     },
     'friday': {
-        'DBMS ': '  8:00 to 9:30',
+        'Data Base Management System ': '  8:00 to 9:30',
         'Break ': '  9:30 to 11:45',
         'Filter Design ': ' 11:45 to 1:15'
     }
@@ -86,9 +86,9 @@ create table table_name;
   'nextSession':{
     'title':'Next Session',
     'desc':'Displays the next session of the given subject.',
-    'example':f'''{prefix}next co&a\n C. Organi & Architecture  is in Tuesday from   8:00 to 9:30 
-    {prefix}next d\n DBMS  is in Friday from   8:00 to 9:30
-    {prefix}next o\n OS  is in Tuesday from   12:30 to 2:00
+    'example':f'''{prefix}next co&a\n C. Organi & Architecture is in Tuesday from 8:00 to 9:30
+    {prefix}next dbms\n DBMS is in Friday from 8:00 to 9:30
+    {prefix}next os\n OS is in Tuesday from 12:30 to 2:00
     '''
   }
 }
