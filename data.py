@@ -3,30 +3,30 @@ routines = {
     'monday': {
         'DBMS': '  8:00 to 9:30',
         'Break': '  9:30 to 10:15',
-        'Engineering Economics': '  10:15 to 11:45',
-        'Computer Network': '  11:45 to 1:15',
+        'Engineering Economics EE': '  10:15 to 11:45',
+        'Computer Network CN': '  11:45 to 1:15',
     },
     'tuesday': {
-        'C. Organi & Architecture ': '  8:00 to 9:30',
-        'Minor Project ': '  9:30 to 11:00',
+        'C. Organi & Architecture COA': '  8:00 to 9:30',
+        'Minor Project MP': '  9:30 to 11:00',
         'Break ': '  11:00 to 12:30',
         'OS ': '  12:30 to 2:00',
     },
     'wednesday': {
-        'Computer Network': '  10:15 to 11:45',
+        'Computer Network CN': '  10:15 to 11:45',
         'Break ': ' 11:45 to 12:30',
         'OS ': ' 12:30 to 2:00'
     },
     'thursday': {
-        ' Engineering Economics ': '  8:00 to 9:30',
-        'C. Organi & Architecture ': '  9:30 to 11:00',
+        ' Engineering Economics EE': '  8:00 to 9:30',
+        'C. Organi & Architecture COA': '  9:30 to 11:00',
         'Break  ': ' 11:00 to 11:45',
-        'Filter Design  ': ' 11:45 to 1:15'
+        'Filter Design FD': ' 11:45 to 1:15'
     },
     'friday': {
         'DBMS ': '  8:00 to 9:30',
         'Break ': '  9:30 to 11:45',
-        'Filter Design  ': ' 11:45 to 1:15'
+        'Filter Design  FD': ' 11:45 to 1:15'
     }
 }
 

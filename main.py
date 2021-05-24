@@ -49,9 +49,9 @@ async def display_routine_everymorning():
     so cmt handeko ekxin lai 
     every run ma hanxa if disable garnu xa vane oday=wday condition ma haal mathi oday=0 haal github ma ekxoti push handinxu
     '''
-    oday=wday
-    ch=client.get_channel(839145616529424384)
-    await helper.display_routines(ch,data.days[wday])
+    # oday=wday
+    # ch=client.get_channel(839145616529424384)
+    # await helper.display_routines(ch,data.days[wday])
 
 
 my_secret = os.environ['TOKEN']
