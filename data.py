@@ -1,32 +1,46 @@
 prefix = "$"
 routines = {
+  # change nagar bhanya bujdainas? gede? add ni nagar CN EE
+  # aafai extract gar Computer Network bata CN 
+  # data jasto kuro change garnu hunna kya, arko function le
+  # kasari use garya xa, bigrina askxa, thapanai nagar
+  # tei bhako data bata nikal chaine kura change nagar
+  '''
+  computer network bata cn extract yesari garni la
+  x = 'Computer Network'
+  x = ''.join([i[0] for i in x.split()])
+
+  kei problem aayo bhane discord ma xu
+
+  '''
+
     'monday': {
         'DBMS': '  8:00 to 9:30',
         'Break': '  9:30 to 10:15',
-        'Engineering Economics EE': '  10:15 to 11:45',
-        'Computer Network CN': '  11:45 to 1:15',
+        'Engineering Economics ': '  10:15 to 11:45',
+        'Computer Network ': '  11:45 to 1:15',
     },
     'tuesday': {
-        'C. Organi & Architecture COA': '  8:00 to 9:30',
-        'Minor Project MP': '  9:30 to 11:00',
+        'C. Organi & Architecture ': '  8:00 to 9:30',
+        'Minor Project ': '  9:30 to 11:00',
         'Break ': '  11:00 to 12:30',
         'OS ': '  12:30 to 2:00',
     },
     'wednesday': {
-        'Computer Network CN': '  10:15 to 11:45',
+        'Computer Network ': '  10:15 to 11:45',
         'Break ': ' 11:45 to 12:30',
         'OS ': ' 12:30 to 2:00'
     },
     'thursday': {
-        ' Engineering Economics EE': '  8:00 to 9:30',
-        'C. Organi & Architecture COA': '  9:30 to 11:00',
+        ' Engineering Economics ': '  8:00 to 9:30',
+        'C. Organi & Architecture ': '  9:30 to 11:00',
         'Break  ': ' 11:00 to 11:45',
-        'Filter Design FD': ' 11:45 to 1:15'
+        'Filter Design ': ' 11:45 to 1:15'
     },
     'friday': {
         'DBMS ': '  8:00 to 9:30',
         'Break ': '  9:30 to 11:45',
-        'Filter Design  FD': ' 11:45 to 1:15'
+        'Filter Design ': ' 11:45 to 1:15'
     }
 }
 
@@ -68,5 +82,14 @@ help_str = {
     'example':'''
 create table table_name;
     '''
+  },
+  'nextSession':{
+    'title':'Next Session',
+    'desc':'Displays the next session of the given subject.',
+    'example':f'''{prefix}next co&a\n C. Organi & Architecture  is in Tuesday from   8:00 to 9:30 
+    {prefix}next d\n DBMS  is in Friday from   8:00 to 9:30
+    {prefix}next o\n OS  is in Tuesday from   12:30 to 2:00
+    '''
   }
 }
+

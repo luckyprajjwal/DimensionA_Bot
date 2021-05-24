@@ -32,8 +32,6 @@ async def on_message(message):
     await sqlprocess.parseSQLQuery(message)
 
 
-  
-
 
 @tasks.loop(seconds=34400)
 async def display_routine_everymorning():

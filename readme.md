@@ -20,7 +20,10 @@ def next_class(message):
   #gar ani bhayo bhane bhan malai
   
   #you are not allowed to change the data.py file at all
-  #if you change it i will block you. 
-
+  #if you change it i will block you.
+  
 ```
+-- Take in pdf from chat message above you  and watermark and return a watermarked pdf or images or zip file
+
+-- Take in images, from chat messages above watermark them and return images or pdf  or zip as user likes
 

@@ -2,18 +2,24 @@ import discord
 import data
 import datetime
 import kecnotice
+from pytz import timezone
 from game2048.game2048 import game2048
 
 client = discord.Client()
-
+Nepal_time = datetime.datetime.now(timezone('Asia/Kathmandu'))
 
   
 async def parse_messages(mess):
   message_text = mess.content[1:]
   if message_text == 'help':
     await display_help(mess)
+    
   if message_text == 'notice':
     await displayKecNotice(mess)
+
+  if message_text.startswith("next"):
+	  await next_class(mess)
+    
   elif message_text in data.abs_days:
     enum_week = datetime.datetime.now().weekday()
     day1 = data.days[(enum_week + data.abs_days[message_text]) % 7]
@@ -69,9 +75,33 @@ async def displayKecNotice(mess):
   x = kecnotice.get_image_links(kecnotice.get_notice_urls(kecnotice.kec))
   for i in x:
     await mess.channel.send(embed=discord.Embed().set_image(url=i))
+
+
+async def next_class(messa):
+	m= messa.content.split()[1].lower()
+	if m=='co&a'or m=='fd'or m=='ee'or m=='d'or m=='o'or m=='cn':
+		await dis_next(messa.channel,m)
+
+
+'''
+    This code provides the next session of the specific subject.
+
+    def dis_next (channel_name, subject_abstract_code):
+        displays the next day and time of given subject 
+        according to subject_abstract_code
+'''
+async def dis_next(channel, sub):
+	today=Nepal_time.weekday()
+	for _ in range(5):
+		today= 1+today%5
+		day=data.days[today]
+		if day in ('saturday','sunday'):
+			return
+		periods_of_day=data.routines[day]
+		for i in periods_of_day:
+			if sub == ''.join([j[0] for j in i.split()]).lower():
+				await channel.send(f"> {i} is in {day.title()} from {data.routines[day][i]}")
   
-
-
 
 #2048 game implementation starts here
 
