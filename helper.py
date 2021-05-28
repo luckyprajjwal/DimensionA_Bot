@@ -83,25 +83,22 @@ async def next_class(messa):
 		await dis_next(messa.channel,m)
 
 
-'''
-    This code provides the next session of the specific subject.
-
-    def dis_next (channel_name, subject_abstract_code):
-        displays the next day and time of given subject 
-        according to subject_abstract_code
-'''
 async def dis_next(channel, sub):
 	today=Nepal_time.weekday()
 	for _ in range(5):
-		today= 1+today%5
+		# print('for')
+		today= (1+today)%5
 		day=data.days[today]
 		if day in ('saturday','sunday'):
+			# print('here')
 			return
 		periods_of_day=data.routines[day]
 		for i in periods_of_day:
+			# print(''.join([j[0] for j in i.split()]).lower(),sub)
 			if sub == ''.join([j[0] for j in i.split()]).lower():
-				await channel.send(f"> {i} is in {day.title()} from {data.routines[day][i]}")
-  
+				print('if')
+				await channel.send(f"```php\n > {i} is in {day.title()} from {data.routines[day][i]}\n```")
+
 
 #2048 game implementation starts here
 

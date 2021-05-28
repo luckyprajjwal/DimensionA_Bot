@@ -1,19 +1,5 @@
 prefix = "$"
 routines = {
-  # change nagar bhanya bujdainas? gede? add ni nagar CN EE
-  # aafai extract gar Computer Network bata CN 
-  # data jasto kuro change garnu hunna kya, arko function le
-  # kasari use garya xa, bigrina askxa, thapanai nagar
-  # tei bhako data bata nikal chaine kura change nagar
-  '''
-  computer network bata cn extract yesari garni la
-  x = 'Computer Network'
-  x = ''.join([i[0] for i in x.split()])
-
-  kei problem aayo bhane discord ma xu
-
-  '''
-
     'monday': {
         'Data Base Management System': '  8:00 to 9:30',
         'Break': '  9:30 to 10:15',
